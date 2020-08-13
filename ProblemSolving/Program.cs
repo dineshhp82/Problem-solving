@@ -14,7 +14,8 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            FindLargestSubsequence.CountLargestSubSequence("abc");
+            LRUSimulator.Simulate();
+            //FindLargestSubsequence.CountLargestSubSequence("abc");
             //RailwayQueue railwayQueue = new RailwayQueue();
             //railwayQueue.PerformOperation();
             //string str = "D@ine$h Sha%ma";

@@ -10,6 +10,16 @@ namespace ProblemSolving
         1) Dictionary
         2) Doubly linked List(DLL)
      Why:
+     DLL is used becuase fast operation like insert,update and delete with O(1).
+     Dictionary has O(1) operations on get and put opertion fast with O(1).
+
+     The use of DLL is for item eviction polices.
+
+     This DLL helps us achieve the LRU eviction strategy, where the objects accessed frequently 
+     will be at the tail end and the objects accessed the least will be towards the head of the 
+     listThis DLL helps us achieve the LRU eviction strategy, where the objects accessed frequently 
+     will be at the tail end and the objects accessed the least will be towards the head of the list.
+
 
 
      Structure:

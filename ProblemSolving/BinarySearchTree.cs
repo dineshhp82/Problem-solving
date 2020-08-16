@@ -45,7 +45,7 @@ namespace ProblemSolving
         {
             if (rootNode != null)
             {
-                rootNode.SoftDelete(data);
+                return rootNode.SoftDelete(data);
             }
             return null;
         }
@@ -220,8 +220,8 @@ namespace ProblemSolving
 
         public void Insert(int inputData)
         {
-            //Right
-            if (Data >= inputData)
+            //Right input>= root value 
+            if (inputData >= Data)
             {
                 if (RightChild == null) //this is termination condition to add node cause its a leaf node
                 {
@@ -234,7 +234,7 @@ namespace ProblemSolving
             }
 
             //Left
-            if (Data <= inputData)
+            if (inputData <= Data)
             {
                 if (LeftChild == null) //this is termination condition to add node cause its a leaf node
                 {
@@ -247,10 +247,11 @@ namespace ProblemSolving
             }
         }
 
-        public void SoftDelete(int inputData)
+        public TreeNode SoftDelete(int inputData)
         {
             TreeNode node = Find(inputData);
             node.IsDeleted = true;
+            return node;
         }
 
         //most left node always smallest value
@@ -258,7 +259,7 @@ namespace ProblemSolving
         {
             if (LeftChild == null)
             {
-                return LeftChild.Data;
+                return Data;
             }
             return LeftChild.SmallestData();
 
@@ -268,7 +269,7 @@ namespace ProblemSolving
         {
             if (RightChild == null)
             {
-                return RightChild.Data;
+                return Data;
             }
             return RightChild.LargestData();
         }
@@ -339,6 +340,60 @@ namespace ProblemSolving
 
     }
 
+    public class TreeSimulator
+    {
+        public static void Simulate()
+        {
+            BinarySearchTree binarySearchTree = new BinarySearchTree();
 
+            Console.WriteLine("Insert values");
+            var values = new int[] { 30, 12, 32, 1, 34, 14, 18, 31 };
+
+            /*       30 
+             *   12     32
+             * 01  14  31   34  
+             *       18       
+             *         
+             *         
+             */
+            foreach (var item in values)
+            {
+                binarySearchTree.InsertNode(item);
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("End Insert");
+
+            binarySearchTree.GetTraverseTree();
+
+            var node = binarySearchTree.FindNode(18);
+            if (node != null)
+            {
+                Console.WriteLine($"Data :{node.Data} IsLeafNode { node.IsLeafNode} IsDeleted {node.IsDeleted}");
+            }
+            else
+            {
+                Console.WriteLine("Not Found");
+            }
+
+            binarySearchTree.SoftDelete(34);
+            var deleteNode = binarySearchTree.FindNode(34);
+            if (deleteNode != null)
+            {
+                Console.WriteLine($"Data :{deleteNode.Data} IsLeafNode { deleteNode.IsLeafNode} IsDeleted {deleteNode.IsDeleted}");
+            }
+            else
+            {
+                Console.WriteLine("Not Found");
+            }
+
+
+            Console.WriteLine("Largest :=>" + binarySearchTree.Largest);
+            Console.WriteLine("Smallest :=>" + binarySearchTree.Smallest);
+            Console.WriteLine("Total Leaf Node :=>" + binarySearchTree.TotalLeafNode);
+            Console.WriteLine("Height :=>" + binarySearchTree.TreeHeight);
+
+
+        }
+    }
 
 }

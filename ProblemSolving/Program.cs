@@ -14,7 +14,8 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            LRUSimulator.Simulate();
+            TreeSimulator.Simulate();
+            //LRUSimulator.Simulate();
             //FindLargestSubsequence.CountLargestSubSequence("abc");
             //RailwayQueue railwayQueue = new RailwayQueue();
             //railwayQueue.PerformOperation();

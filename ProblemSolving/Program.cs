@@ -1,4 +1,5 @@
 ﻿using ProblemSolving.Basic;
+using ProblemSolving.DataStructure;
 using ProblemSolving.Sorting;
 using System;
 using System.Threading;
@@ -16,11 +17,15 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
+            LinkedListDemo.Demo();
+            //MergeSortSimulator.Simulator();
+            //QueueSimulator.SimpleQueueSimulate();
+            //Simulator.Simulate();
             //ArraySearch.SearchOrderArray(new[] { 10, 4, 8, 30, 24, 7, 20 }, 4);
 
             //SwapInArray.MoveLastItemToFirst(new[] { 10, 4, 8, 30, 24, 7, 20 });
 
-            AllLoops.TwoNestedForAnotherLoop();
+            //AllLoops.TwoNestedForAnotherLoop();
 
             /// AllLoops.ForwardForLoop();
             //AllLoops.ReverseForLoop();

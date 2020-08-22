@@ -17,7 +17,10 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            LinkedListDemo.Demo();
+            //Pyramid.PrintUpTriangle(10);
+            Pyramid.Diamond(5);
+            //QuickSortDemo.Demo();
+            //LinkedListDemo.Demo();
             //MergeSortSimulator.Simulator();
             //QueueSimulator.SimpleQueueSimulate();
             //Simulator.Simulate();

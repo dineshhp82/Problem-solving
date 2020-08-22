@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProblemSolving
+namespace ProblemSolving.Sorting
 {
     public class BubbleSort
     {

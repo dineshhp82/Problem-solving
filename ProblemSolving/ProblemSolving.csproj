@@ -5,4 +5,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Dynamic\" />
+    <Folder Include="DivideConqure\" />
+    <Folder Include="Greedy\" />
+    <Folder Include="StringManipulate\" />
+  </ItemGroup>
+
 </Project>

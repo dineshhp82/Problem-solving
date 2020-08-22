@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ProblemSolving.Basic;
+using ProblemSolving.DataStructure;
+using ProblemSolving.Sorting;
+using System;
 using System.Threading;
 
 namespace ProblemSolving
@@ -14,7 +17,36 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            TreeSimulator.Simulate();
+            //Pyramid.PrintUpTriangle(10);
+            Pyramid.Diamond(5);
+            //QuickSortDemo.Demo();
+            //LinkedListDemo.Demo();
+            //MergeSortSimulator.Simulator();
+            //QueueSimulator.SimpleQueueSimulate();
+            //Simulator.Simulate();
+            //ArraySearch.SearchOrderArray(new[] { 10, 4, 8, 30, 24, 7, 20 }, 4);
+
+            //SwapInArray.MoveLastItemToFirst(new[] { 10, 4, 8, 30, 24, 7, 20 });
+
+            //AllLoops.TwoNestedForAnotherLoop();
+
+            /// AllLoops.ForwardForLoop();
+            //AllLoops.ReverseForLoop();
+            // AllLoops.ForwardWhileLoop();
+            // AllLoops.ReverseWhileLoop();
+
+            //var arr = new int[8];
+            //arr[0] = 4;
+            //arr[1] = 7;
+            //arr[2] = 8;
+            //arr[3] = 10;
+            //arr[4] = 20;
+            //arr[5] = 24;
+            //arr[6] = 30;
+            //ArraySearch.DeleteItemFromSortedArray(arr, 130);
+            //ArraySearch.InsertItemInSortedArray(arr, 3);
+            // InsertionSort.SortValues(new[] { 10, 4, 8, 30, 24, 7, 20 });
+            //TreeSimulator.Simulate();
             //LRUSimulator.Simulate();
             //FindLargestSubsequence.CountLargestSubSequence("abc");
             //RailwayQueue railwayQueue = new RailwayQueue();

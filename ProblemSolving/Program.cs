@@ -1,5 +1,6 @@
 ﻿using ProblemSolving.Basic;
 using ProblemSolving.DataStructure;
+using ProblemSolving.DivideConqure;
 using ProblemSolving.Sorting;
 using System;
 using System.Threading;
@@ -17,8 +18,15 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
+            Recursion r = new Recursion();
+            int c = r.SumOfArray(new[] { 10, 4, 8, 30, 24, 7, 20 }, 6);
+            Console.WriteLine(c);
+            //r.PrintFibonacciSeries(10);
+            //int d = r.FibonacciValueAtIndex(7);
+            //Console.WriteLine(d);
+            //DivideArrayInSubPartsAndSum.Demo();
             //Pyramid.PrintUpTriangle(10);
-            Pyramid.Diamond(5);
+            //Pyramid.Diamond(10);
             //QuickSortDemo.Demo();
             //LinkedListDemo.Demo();
             //MergeSortSimulator.Simulator();

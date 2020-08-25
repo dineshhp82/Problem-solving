@@ -54,6 +54,7 @@ namespace ProblemSolving.Sorting
 
         private void MergeValue(int[] values, int s, int m, int e)
         {
+            values.PrintArray(s, e, "Sub Array ", ConsoleColor.Green);
             int leftCount = m - s + 1;
             int rightCount = e - m;
 

@@ -2,6 +2,7 @@
 using ProblemSolving.DataStructure;
 using ProblemSolving.DivideConqure;
 using ProblemSolving.Sorting;
+using ProblemSolving.StringManipulate;
 using System;
 using System.Threading;
 
@@ -18,9 +19,22 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            Recursion r = new Recursion();
-            int c = r.SumOfArray(new[] { 10, 4, 8, 30, 24, 7, 20 }, 6);
-            Console.WriteLine(c);
+            SuperReducedString.ReducedString("aad");
+
+            //PrintDuplicateAndCount.CountDuplicateSimple("Moon starter");
+            //Console.WriteLine("-----");
+            //PrintDuplicateAndCount.CountDuplicateFast("Moon starter");
+            //var t = AnagramDemo.IsAnagram("Astronomer", "Moon starer");
+            //Console.WriteLine(t);
+            //var r = Palindrome.IsPalindrome("civic");
+            //var r1 = Palindrome.IsPalindromeWithFor("civic");
+            //var r2 = Palindrome.IsPalindromeWithFastWay("racecare");
+            //Console.WriteLine(r2);
+            //Console.WriteLine(r);
+            //ReverseString.ReverseByRecursion("dinesh");
+            // Recursion r = new Recursion();
+            //int c = r.SumOfArray(new[] { 10, 4, 8, 30, 24, 7, 20 }, 6);
+            // Console.WriteLine(c);
             //r.PrintFibonacciSeries(10);
             //int d = r.FibonacciValueAtIndex(7);
             //Console.WriteLine(d);
